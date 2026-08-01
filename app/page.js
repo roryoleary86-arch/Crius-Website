@@ -2,6 +2,7 @@ import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import CTASection from "@/components/CTASection";
 import { IconArrow } from "@/components/icons";
+import MicrosoftMark from "@/components/MicrosoftMark";
 
 export const metadata = {
   title: "Crius AI — Legal judgment, applied with AI",
@@ -122,13 +123,16 @@ export default function Home() {
                     Award-winning recognition from the Network for Teaching Entrepreneurship — the
                     clearest external proof point Crius has today.
                   </div>
-                  <div className="award-note">Recognised</div>
+                  <div className="award-note">Recognised · logo mark pending</div>
                 </div>
               </div>
               <div className="award-item">
                 <span className="idx-num">02</span>
                 <div>
-                  <div className="award-name">Microsoft SL Innovators of the Year 2026</div>
+                  <div className="award-name" style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                    <MicrosoftMark size={18} />
+                    Microsoft SL Innovators of the Year 2026
+                  </div>
                   <div className="award-desc">Also shortlisted.</div>
                 </div>
               </div>
